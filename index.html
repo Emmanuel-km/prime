@@ -61,6 +61,138 @@
       </article>
       -->
     </section>
+```html
+<section class="reading-section" id="now-known">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">The archive</p>
+      <h2>Now Known</h2>
+    </div>
+    <p class="count">Daily notes <span>1</span></p>
+  </div>
+
+  <article class="entry featured">
+    <div class="entry-date">
+      <time datetime="2026-09-16">16 September 2026</time>
+      <span>Wednesday</span>
+    </div>
+
+    <div class="entry-content">
+      <p class="tag">Highlight of the day</p>
+
+      <blockquote>
+        “Irradiance describes the sun’s momentary power; irradiation describes
+        the energy collected over time.”
+      </blockquote>
+
+      <p class="source">
+        Key discussion:
+        <cite>Solar Resource Fundamentals</cite>
+      </p>
+
+      <div class="note">
+        <span class="note-label">What I learned</span>
+
+        <p>
+          Irradiance is the amount of solar power arriving at a surface at a
+          particular moment. It is measured in W/m². Irradiation, or insolation,
+          is the accumulated solar energy over time, commonly measured in
+          kWh/m².
+        </p>
+
+        <p>
+          When modelling a PV module, irradiance is used for momentary output
+          predictions, while irradiation is used to estimate daily energy
+          yield.
+        </p>
+      </div>
+
+      <div class="reading-grid">
+        <div>
+          <h3>GHI, DNI &amp; DHI</h3>
+
+          <p>
+            <strong>GHI</strong> — Global Horizontal Irradiance — is the total
+            solar irradiance received on a horizontal surface. It includes both
+            direct and diffuse radiation and is commonly used for flat-plate
+            solar systems.
+          </p>
+
+          <p>
+            <strong>DNI</strong> — Direct Normal Irradiance — measures direct
+            sunlight on a surface perpendicular to the sun’s rays. It is
+            especially important for concentrating solar systems.
+          </p>
+
+          <p>
+            <strong>DHI</strong> — Diffuse Horizontal Irradiance — is sunlight
+            scattered by the atmosphere, including air molecules, dust, water
+            vapour, and pollutants, that reaches a horizontal surface.
+          </p>
+        </div>
+
+        <div>
+          <h3>Measurement &amp; modelling</h3>
+
+          <p>
+            A <strong>pyranometer</strong> is a scientific sensor used to
+            measure solar irradiance. It captures both direct sunlight and
+            diffuse sky radiation.
+          </p>
+
+          <p>
+            Common types of pyranometers include thermopile and silicon
+            photocell sensors. A detector beneath a glass dome converts
+            sunlight into a small electrical signal proportional to its
+            intensity.
+          </p>
+
+          <p>
+            The zenith angle,
+            <strong>&theta;<sub>z</sub></strong>, is the angle between the sun
+            and the vertical direction directly above an observer.
+          </p>
+
+          <p>
+            A sun-position diagram or simulation can track how the sun moves
+            across the sky and show how panel tilt and orientation affect
+            plane-of-array irradiance.
+          </p>
+        </div>
+      </div>
+
+      <div class="note accent-note">
+        <span class="note-label">Peak sun hours</span>
+
+        <p>
+          Peak Sun Hours represent the total solar energy received at a
+          location during a day. They compress a day of changing irradiance
+          into an equivalent number of hours at 1,000 W/m².
+        </p>
+
+        <p>
+          A location may have 12 hours of sunlight but only 5.5 peak sun hours
+          because solar intensity changes throughout the day. PSH is useful for
+          solar-system sizing and expected-energy calculations.
+        </p>
+      </div>
+
+      <div class="next-step">
+        <span class="note-label">Application idea</span>
+
+        <p>
+          Build an AI-assisted tracker that records daily sun hours and sky
+          conditions, then predicts the following day. The project could also
+          compare locations by maximum and expected solar energy using
+          simulated sun position, GHI, DNI, DHI, panel orientation, and weather
+          conditions.
+        </p>
+      </div>
+    </div>
+  </article>
+</section>
+```
+    
 
     <section id="about" class="about">
       <p class="eyebrow">About this space</p>
