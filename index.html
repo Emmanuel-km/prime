@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Now Known — a daily reading journal.">
+  <title>Now Known — Daily Reading Journal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Now Known home">Now Known<span class="dot">.</span></a>
+      <nav aria-label="Main navigation">
+        <a class="active" href="index.html">Reading</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">A daily reading journal</p>
+      <h1 id="page-title">What I’m learning,<br><em>one day at a time.</em></h1>
+      <p class="intro">A quiet record of ideas, passages, and questions worth carrying forward.</p>
+    </section>
+
+    <section class="reading-section" aria-labelledby="reading-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The archive</p>
+          <h2 id="reading-title">Now Known</h2>
+        </div>
+        <p class="count">Daily notes <span id="entry-count">1</span></p>
+      </div>
+
+      <!-- Add a new article below the latest entry each day. Copy the article structure. -->
+      <article class="entry featured">
+        <div class="entry-date"><time datetime="2026-09-16">16 September 2026</time><span>Wednesday</span></div>
+        <div class="entry-content">
+          <p class="tag">Highlight of the day</p>
+          <blockquote>“The life of the mind is not a race toward certainty. It is a practice of noticing what changes when we look again.”</blockquote>
+          <p class="source">From <cite>The Art of Paying Attention</cite></p>
+          <div class="note">
+            <span class="note-label">My note</span>
+            <p>Reading becomes more useful when it gives me a better question, not just another answer. Today I’m keeping this one: what deserves a second look?</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Example entry: duplicate and edit this block for future days. -->
+      <!--
+      <article class="entry">
+        <div class="entry-date"><time datetime="2026-09-17">17 September 2026</time><span>Thursday</span></div>
+        <div class="entry-content">
+          <p class="tag">Highlight of the day</p>
+          <blockquote>“Your highlight goes here.”</blockquote>
+          <p class="source">From <cite>Book or article title</cite></p>
+          <div class="note"><span class="note-label">My note</span><p>Your reflection goes here.</p></div>
+        </div>
+      </article>
+      -->
+    </section>
+
+    <section id="about" class="about">
+      <p class="eyebrow">About this space</p>
+      <p>Now Known is a growing collection of things I have read and want to remember. New sections will arrive later.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><span>Now Known</span><span>Read slowly. Keep what matters.</span></div></footer>
+  <script>document.getElementById('entry-count').textContent = document.querySelectorAll('.entry').length;</script>
+</body>
+</html>
