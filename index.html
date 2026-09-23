@@ -191,7 +191,7 @@
     </div>
   </article>
 
-        <article class="entry featured">
+ <article class="entry featured">
         <div class="entry-date"><time datetime="2026-09-23">23 September 2026</time><span>Wednesday</span></div>
         <div class="entry-content">
           <p class="tag">Highlight of the day</p>
@@ -199,9 +199,9 @@
           <p class="source">From Notes on Electronics</p>
           <div class="note">
             <span class="note-label">My note</span>
-            <p>A transistor is a semiconductor device that acts as a switch or an amplifier — boosting a small signal into a larger one. As a switch, a small voltage applied to the base pushes current into the emitter; this current is controlled by, and flows through, the collector once the device enters its active region.</p>
-            <p>For a BC548 transistor, the base-emitter junction needs about 0.7V to turn on and enter the active region. If the base voltage rises too far past this, the transistor enters breakdown — and gets damaged. It helps to picture the transistor as two diodes joined back-to-back, one at the base-emitter junction and one at the base-collector junction.</p>
-            <p>One relationship worth remembering: as Vcc increases, Vbb decreases — but both Ib and Ic increase gradually as a result.</p>
+            <p>A transistor is a semiconductor device that acts as a switch or an amplifier, boosting a small signal into a larger one. As a switch, a small voltage applied to the base pushes current into the emitter, and this current is controlled by, and flows through, the collector once the device enters its active region.</p>
+            <p>For a BC548 transistor, the base emitter junction needs about 0.7V to turn on and enter the active region. If the base voltage rises too far past this, the transistor enters breakdown and gets damaged. It helps to picture the transistor as two diodes joined together at the base, one at the base emitter junction and one at the base collector junction.</p>
+            <p>One relationship worth remembering: as Vcc increases, Vbb decreases, but both Ib and Ic increase gradually as a result.</p>
 
             <figure class="image-placeholder">
               <div class="placeholder-box">[ Insert photo: assembled circuit ]</div>
@@ -214,9 +214,55 @@
             </figure>
 
             <figure class="image-placeholder">
-              <div class="placeholder-box">[ Insert photo: diode-equivalent schematic — label Collector, Base, Emitter junctions ]</div>
-              <figcaption>Fig. 3 — Transistor as two diodes (C-B / B-E)</figcaption>
+              <div class="placeholder-box">[ Insert photo: diode equivalent schematic — label Collector, Base, Emitter junctions ]</div>
+              <figcaption>Fig. 3 — Transistor as two diodes (C to B / B to E)</figcaption>
             </figure>
+
+            <h3>Bipolar Junction Transistor</h3>
+            <p>The BJT is a three terminal device that comes in two types: NPN (negative positive negative) and PNP (positive negative positive). The three terminals are called the base (B), collector (C) and emitter (E).</p>
+
+            <h4>Transistor schematics and junction diagrams</h4>
+            <p>Four related diagrams describe the internal structure and symbols of the BJT.</p>
+
+            <figure class="image-placeholder">
+              <div class="placeholder-box">[ Insert diagram: equivalent diode model — two diodes joined at the central Base (B) node, showing the internal P N junctions of a BJT ]</div>
+              <figcaption>Fig. 4 — Equivalent diode model</figcaption>
+            </figure>
+
+            <figure class="image-placeholder">
+              <div class="placeholder-box">[ Insert diagram: NPN symbol — Base (B) on the left, Collector (C) at the top, Emitter (E) at the bottom, arrow pointing outward from Base toward Emitter, labeled "npn" ]</div>
+              <figcaption>Fig. 5 — NPN transistor symbol</figcaption>
+            </figure>
+
+            <figure class="image-placeholder">
+              <div class="placeholder-box">[ Insert diagram: PNP symbol — Base (B) on the left, Collector (C) at the top, Emitter (E) at the bottom, arrow pointing inward from Emitter toward Base, labeled "pnp" ]</div>
+              <figcaption>Fig. 6 — PNP transistor symbol</figcaption>
+            </figure>
+
+            <figure class="image-placeholder">
+              <div class="placeholder-box">[ Insert diagram: junction labels — simplified block/diode representation with an upper arrow pointing to the Base Collector junction and a lower arrow pointing to the Base Emitter junction ]</div>
+              <figcaption>Fig. 7 — Junction labels</figcaption>
+            </figure>
+
+            <h4>Practical component pinout diagram</h4>
+            <p>The BC548 pinout diagram shows a front view of a TO 92 plastic transistor package with three leads extending downward, labeled left to right as C, B, E:</p>
+            <ul>
+              <li>C — Collector</li>
+              <li>B — Base</li>
+              <li>E — Emitter</li>
+            </ul>
+
+            <figure class="image-placeholder">
+              <div class="placeholder-box">[ Insert photo: BC548 TO 92 package, front view, leads labeled left to right C, B, E ]</div>
+              <figcaption>Fig. 8 — BC548 component pinout</figcaption>
+            </figure>
+
+            <h4>Calculations and formulas</h4>
+            <p>In this section we are using a BC548 pinout transistor, where C is the collector, B is the base and E is the emitter.</p>
+            <p>The collector current and the base current are related by:</p>
+            <p class="formula">I<sub>c</sub> = β × I<sub>b</sub></p>
+            <p>Applying Kirchhoff's Current Law at the transistor:</p>
+            <p class="formula">I<sub>e</sub> = I<sub>c</sub> + I<sub>b</sub></p>
           </div>
         </div>
       </article>
