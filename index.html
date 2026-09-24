@@ -266,6 +266,45 @@
           </div>
         </div>
       </article>
+
+<article class="entry featured">
+        <div class="entry-date"><time datetime="2026-09-24">24 September 2026</time><span>Thursday</span></div>
+        <div class="entry-content">
+          <p class="tag">Highlight of the day</p>
+          <blockquote>“A diode does not fight the alternating current, it simply refuses to carry it backwards.”</blockquote>
+          <p class="source">From Notes on Electronics</p>
+          <div class="note">
+            <span class="note-label">My note</span>
+
+            <h3>Physics of Semiconductor Diode Rectification: From Half Wave to Ripple Smoothing</h3>
+            <p>This circuit chain converts alternating current (AC) into stable direct current (DC) by exploiting the one way conduction of a P N junction diode, then smoothing and regulating the output using a capacitor and a Zener diode. Each stage below carries the physics behind it, along with a description of how current flows through the circuit.</p>
+
+            <h4>1. Half wave rectifier: AC to pulsating DC</h4>
+            <p>An AC source feeds the primary coil of a transformer, where the current alternates direction continuously. The transformer steps this down (or up) across the core to a secondary coil, producing a stepped AC voltage. From the secondary coil, the signal reaches the anode of a diode. Current is only allowed to flow through the diode when the anode is positive relative to the cathode, since this forward biases the junction and produces roughly a 0.7V drop across it for silicon. Once through the diode, current flows downward through the load resistor, but only during the positive half cycle of the input.</p>
+            <p>A semiconductor diode is a P N junction device that conducts current primarily in one direction. During the positive half cycle of the AC input, the anode becomes positive relative to the cathode, forward biasing the diode. This narrows the depletion region, allowing majority carriers (holes in the P type material, electrons in the N type material) to cross the junction and produce current through the load resistor.</p>
+            <p>During the negative half cycle, the diode is reverse biased instead: the depletion region widens and forms a high resistance barrier that blocks current. As a result, no voltage appears across the load for that half cycle. The transformer's output voltage follows the turns ratio between the primary and secondary coils, so the final output at this stage is pulsating DC: unidirectional, but not yet constant.</p>
+
+            <h4>2. Filtering and ripple smoothing: pulsating DC to smoothed DC</h4>
+            <p>The rectified output is fed into a capacitor placed in parallel with the load, which smooths the pulsating DC into something closer to a steady level. During the positive half cycle, while the diode conducts, the capacitor charges rapidly through the diode's low forward resistance, storing energy in its electric field.</p>
+            <p>When the input voltage falls, either between peaks or during the blocked negative half cycle, the diode becomes reverse biased and stops conducting. At that point the capacitor discharges slowly through the load resistor instead, supplying current and holding the output voltage up until the next charging pulse arrives.</p>
+            <p>The key figure governing how well this works is the RC time constant, τ = R_L × C, the time it takes the capacitor to discharge to about 37% of its initial voltage. For effective filtering, this time constant must be much larger than the period of the AC ripple: R_L × C ≫ T = 1/f, where f is the ripple frequency (equal to the input AC frequency for a half wave rectifier). When this condition holds, the capacitor's voltage only decays slightly between charging pulses, producing a nearly constant DC level with a small ripple. A larger capacitance gives a longer time constant and therefore a smoother output.</p>
+
+            <h4>3. Voltage regulation using a Zener diode: smoothed DC to stable DC</h4>
+            <p>From the filter stage, the smoothed DC passes through a switch into a regulation stage built around a Zener diode connected in parallel with the load, downstream of the smoothing capacitor. The Zener diode sits reverse biased in this circuit, and conducts once the voltage across it reaches its rated breakdown voltage, V_Z.</p>
+            <p>A Zener diode is a specially doped P N junction designed to operate reliably in reverse breakdown at a precise voltage. Once in breakdown, whether through the Zener effect at low voltages or avalanche breakdown at higher voltages, it conducts heavily and holds an almost constant voltage across its terminals, even as the current through it varies. This makes it an effective shunt voltage regulator: if the input voltage rises, the Zener draws more current and drops the excess voltage across the series resistance, keeping the load voltage stable. If the input voltage falls below V_Z, the Zener stops conducting and behaves like an open circuit instead, so regulation is lost at that point.</p>
+
+            <h4>Linking diodes to transistors</h4>
+            <p>The P N junction is the building block behind both diodes and transistors. A Bipolar Junction Transistor contains two P N junctions arranged back to back, either as NPN or PNP. Its base emitter junction behaves just like a forward biased diode, needing roughly 0.7V for silicon to turn the transistor on.</p>
+            <p>In power supplies, transistors extend what Zener regulation alone can do: the Zener provides a stable reference voltage, while a transistor amplifies current, letting the overall circuit supply far higher load currents than a Zener diode could manage on its own.</p>
+
+            <h4>Full power supply chain</h4>
+            <p>Put together, the stages form one continuous chain: an AC input passes through a transformer, which steps the voltage according to its turns ratio (V₂ equals the ratio of secondary to primary turns, multiplied by V₁); the diode rectifier then enforces one way conduction through the P N junction, producing a half wave output; the capacitor filter smooths this using a time constant far greater than the AC period (R_L × C ≫ T); and the Zener stabilizer holds the final output at a stable, regulated voltage, V_Z.</p>
+            <p>The result is a clean progression from raw alternating current to a steady, regulated DC supply suitable for powering electronic circuits.</p>
+          </div>
+        </div>
+      </article>
+
+
 </section>
 
     
