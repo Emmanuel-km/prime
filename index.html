@@ -305,6 +305,59 @@
       </article>
 
 
+<article class="entry featured">
+        <div class="entry-date"><time datetime="2026-09-25">25 September 2026</time><span>Friday</span></div>
+        <div class="entry-content">
+          <p class="tag">Highlight of the day</p>
+          <blockquote>“A panel's nameplate watts are a promise about a laboratory, not a promise about your roof.”</blockquote>
+          <p class="source">From Notes on Solar PV</p>
+          <div class="note">
+            <span class="note-label">My note</span>
+
+            <h3>Air Mass and Standard Test Conditions (STC)</h3>
+<hr>
+<p>More about air mass in solar energy: <a href="https://en.wikipedia.org/wiki/Air_mass_%28solar_energy%29">click here</a></p>
+<hr>
+            <p>The air mass coefficient describes how far sunlight actually travels through the atmosphere before reaching a panel, given as a ratio against the shortest possible path: straight up, at the zenith. Outside the atmosphere altogether, air mass is zero, and the irradiance there is about 1,367 W per square metre, known as the solar constant. As the sun's angle moves away from directly overhead, sunlight cuts through more atmosphere, and the air mass ratio rises with it.</p>
+            <p>An air mass of 1.5, or AM 1.5, means sunlight has passed through one and a half atmosphere thicknesses, corresponding to a solar zenith angle of roughly 48.2°. This value was adopted in the 1970s as the reference spectrum for the industry, chosen because it represents a typical operating sun across the continental United States during prime generating hours, rather than the highest possible sun. The "G" in AM 1.5G stands for global tilted: it accounts for direct beam light, diffuse sky light, and ground reflection together, on a surface tilted 37° toward the equator, which is close to what a fixed tilt module actually sees in practice. This full spectrum is tabulated wavelength by wavelength in ASTM G173 and adopted by the IEC in IEC 60904 3.</p>
+            <p>The spectrum matters because silicon only responds efficiently to wavelengths from roughly 300 to 1,100 nanometres. A lamp heavy in red and infrared light will flatter a panel compared with one heavy in green and ultraviolet light, so without a standardised spectrum, two labs testing the same panel under different lamps would report different wattages. AM 1.5G is what removes that variable.</p>
+
+            <h4>The three pinned values of STC</h4>
+            <p>Standard Test Conditions, or STC, is the one fixed laboratory setup that every manufacturer rates a panel against, whether it is a LONGi, a Jinko, or a REC module. It pins down three quantities, and every other electrical spec on a datasheet, Pmax, Vmp, Imp, Voc, Isc, is simply what gets measured once those three are held fixed.</p>
+            <table>
+              <tr><th>Parameter</th><th>STC value</th><th>What it represents</th></tr>
+              <tr><td>Plane of array irradiance</td><td>1,000 W/m²</td><td>Roughly peak clear sky sunlight, panel facing the sun</td></tr>
+              <tr><td>Cell temperature</td><td>25°C</td><td>The cell itself, not the surrounding air</td></tr>
+              <tr><td>Air mass coefficient</td><td>AM 1.5G</td><td>Spectrum and path length through 1.5 atmospheres</td></tr>
+            </table>
+            <p>The 1,000 W/m² figure is a clean round number chosen because ground level irradiance on a clear day, once atmospheric absorption from water vapour, ozone and Rayleigh scattering is accounted for, typically peaks between 1,000 and 1,050 W/m². The 25°C cell temperature is simply room temperature, a convenient and already standard reference point across electrical engineering. Neither figure is meant to describe what a panel experiences in the field.</p>
+            <p>STC exists purely for fair comparison. The International Electrotechnical Commission formalised it into IEC 61215 in the early 1990s, with IEC 61215 1:2021 as the current edition, precisely so that a lab in Xi'an, a lab in Singapore, and a third party test house in Cologne all arrive at the same wattage for the same panel. Before this existed, manufacturers rated panels however they liked, and comparing two panels meant testing them both under identical outdoor conditions.</p>
+
+            <h4>How a panel is actually tested</h4>
+            <p>A real panel cannot sit in real 1,000 W/m² sunlight and stay at 25°C, since the cell heats past that within seconds of exposure. Instead, manufacturers use a flash tester: an enclosed cabinet with a xenon arc lamp that fires a single pulse, typically one to ten milliseconds long, calibrated to 1,000 W/m². During that pulse, an electronic load sweeps the panel from short circuit through its maximum power point to open circuit, capturing the full current voltage curve before the cell has time to warm up.</p>
+            <p>IEC 60904 9 grades flash testers on three criteria: how closely the lamp's spectrum matches AM 1.5G, how evenly the irradiance is spread across the panel, and how stable that irradiance stays during the sweep. Tier one manufacturers run testers graded A+ on all three axes, while lower tier factories sometimes use Class B equipment, which can introduce around 2% uncertainty into the rated wattage.</p>
+            <p>From that single I-V curve, every electrical spec on the datasheet follows: Pmax is the highest point on the curve, Vmp and Imp are the voltage and current at that point, Voc is where the curve crosses zero current, Isc is where it crosses zero voltage, and fill factor is Pmax divided by Voc times Isc, a measure of how close the curve sits to an ideal rectangle.</p>
+
+            <h4>Power tolerance and binning</h4>
+            <p>Modern Tier one datasheets quote a tolerance such as 0 / +5 W, meaning a panel sold as 410 W will measure between 410 and 415 W at STC, never below. Panels coming off the flash tester are sorted into wattage bins and labelled accordingly, a practice known as positive tolerance binning that became standard around 2014. Older panels, and some lower tier product still, used a tolerance of plus or minus 3 to 5%, meaning a panel sold as 300 W could genuinely be as low as 285 W. This matters in a string of panels, since the weakest one caps the current for the whole string.</p>
+
+            <h4>What STC does not tell you</h4>
+            <p>STC is a measurement standard, not a yield forecast. It says nothing about how much energy a panel will produce in a given climate, which depends on irradiance data and the panel's temperature coefficient. It says nothing about degradation, since STC is a day zero figure and a Tier one panel typically retains 87 to 92% of its rated output after 25 years. It also says nothing about cold weather behaviour: on a cold morning, open circuit voltage can run 15 to 20% above the STC figure, which matters when sizing a string against an inverter's maximum input.</p>
+            <p>Because of the fixed 25°C reference, STC also overstates real world output simply by ignoring heat. A typical rooftop cell runs 20 to 35°C hotter than the surrounding air, so a panel rated at STC can lose 6 to 12% of its nameplate output purely from running hot, before any other loss is counted.</p>
+
+            <h3>NOCT, temperature coefficient, and reading the I-V curve</h3>
+            <p>NOCT, the Nominal Operating Cell Temperature (also written NMOT), describes the temperature a panel reaches under more realistic conditions: 800 W/m² irradiance, 20°C ambient air, and a light 1 m/s wind, rather than the fixed 25°C cell of STC. Under these conditions a cell typically settles between 42 and 48°C, which makes NOCT a far better indicator of everyday field temperature than the STC figure, even though STC remains the number printed as the headline rating.</p>
+            <p>The temperature coefficient describes how much a panel's power, voltage or current shifts for every degree the cell moves away from 25°C, usually expressed as a percentage per °C, for example −0.35%/°C for Pmax. Because this figure is negative, a hotter panel produces less power: at 45°C cell temperature with a −0.35%/°C coefficient, a panel loses about 7% of its rated output from heat alone. Two panels with identical STC wattage but different coefficients, say −0.24%/°C for an HJT cell against −0.34%/°C for a PERC cell, can diverge by 5 to 8% on a hot afternoon despite being rated identically on paper.</p>
+            <p>The I-V curve itself, current plotted against voltage under a given set of conditions, is where all of this is read from. Its two axis crossings are Isc, the short circuit current at zero voltage, and Voc, the open circuit voltage at zero current. Between them sits Pmax, the point on the curve where the product of voltage and current peaks, which is what an MPPT controller in an inverter continuously hunts for as conditions shift through the day.</p>
+            <p>Fill factor ties the curve's shape to its quality: FF = Pmax ÷ (Voc × Isc), typically between 0.70 and 0.85 for a good panel. A higher fill factor means a squarer, more efficient curve, while a rounded curve with a low fill factor delivers less power than the raw Voc times Isc figure would suggest.</p>
+            <p>Panel efficiency follows a separate, simpler formula: efficiency equals Pmax divided by the panel's area times 1,000 W/m², expressed as a percentage. Typical commercial panels sit between 18 and 23%. A higher efficiency panel delivers more power from the same roof area, which is a different comparison entirely from a higher wattage panel, since a larger panel can easily out rate a smaller one in raw watts while being no more efficient per square metre.</p>
+
+            <p>Put together, the I-V curve is what actually gets measured; Pmax and fill factor are read off that curve; Pmax combined with panel area gives efficiency; the temperature coefficient then adjusts Pmax for whatever the real cell temperature turns out to be; and NOCT is what estimates that real cell temperature in the first place. STC sits underneath all of it as the one fixed reference point that makes every one of these numbers comparable from one datasheet to the next.</p>
+          </div>
+        </div>
+      </article>
+
+
 </section>
 
     
