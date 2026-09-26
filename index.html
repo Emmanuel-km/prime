@@ -357,6 +357,233 @@
         </div>
       </article>
 
+<article class="entry featured">
+  <div class="entry-date">
+    <time datetime="2026-09-26">26 September 2026</time>
+    <span>Saturday</span>
+  </div>
+
+  <div class="entry-content">
+    <p class="tag">Highlight of the day</p>
+
+    <blockquote>
+      “An efficient solar energy system is designed as one integrated system,
+      from the solar cell and wiring to the inverter, thermal collector, and
+      energy storage.”
+    </blockquote>
+
+    <p class="source">
+      Key discussion:
+      <cite>Solar PV and Thermal System Design Integration</cite>
+    </p>
+
+    <div class="note">
+      <span class="note-label">What I learned</span>
+
+      <p>
+        A comprehensive solar energy system requires careful optimization across
+        electrical and thermal components. The short-circuit current
+        (<strong>I<sub>sc</sub></strong>) and maximum power point tracking
+        (<strong>MPPT</strong>) work together to maximize energy extraction.
+        String sizing and voltage-drop calculations ensure safe current and
+        voltage levels throughout the DC circuit.
+      </p>
+
+      <p>
+        Shading analysis helps determine optimal module placement and predict
+        annual irradiance losses. Bypass diodes protect shaded or damaged cell
+        groups, reducing the risk of hot spots and helping prevent severe
+        localized heating.
+      </p>
+    </div>
+
+    <div class="reading-grid">
+      <div>
+        <h3>PV electrical design</h3>
+
+        <p>
+          <strong>I<sub>sc</sub> — Short-Circuit Current:</strong>
+          The maximum current a solar cell or module produces when its output
+          terminals are shorted together under standard test conditions.
+        </p>
+
+        <p>
+          <strong>MPPT — Maximum Power Point Tracking:</strong>
+          An electronic technique used by an inverter or charge controller to
+          continuously adjust operating voltage and current so the array
+          delivers its maximum possible power.
+        </p>
+
+        <p>
+          <strong>String sizing:</strong>
+          The calculation used to determine how many modules can be connected
+          in series and parallel while remaining within the inverter’s voltage
+          and current limits across expected temperatures.
+        </p>
+
+        <p>
+          <strong>Voltage-drop calculation:</strong>
+          This ensures that resistive conductor losses between the array and
+          inverter remain below a target percentage, typically 1–3%, to protect
+          system efficiency.
+        </p>
+
+        <p>
+          <strong>Shading analysis:</strong>
+          This maps obstructions such as trees, chimneys, and nearby buildings
+          to estimate how much irradiance the array will lose throughout the
+          year.
+        </p>
+      </div>
+
+      <div>
+        <h3>Module protection</h3>
+
+        <p>
+          <strong>Bypass diodes:</strong>
+          Components inside module junction boxes that route current around
+          shaded or damaged cell groups, preventing them from bottlenecking the
+          entire string.
+        </p>
+
+        <p>
+          <strong>Hot spots:</strong>
+          Localized areas of overheating that occur when a mismatched or faulty
+          cell dissipates power instead of generating it. Hot spots can damage
+          the module.
+        </p>
+
+        <p>
+          <strong>PID — Potential-Induced Degradation:</strong>
+          A voltage-driven degradation mechanism in which leakage currents
+          between the cells and module frame cause power loss over time.
+        </p>
+
+        <p>
+          <strong>Inverter clipping:</strong>
+          This occurs when the DC array produces more power than the inverter’s
+          AC rating, causing the excess energy to be curtailed.
+        </p>
+
+        <p>
+          <strong>DC/AC ratio:</strong>
+          Also called the inverter loading ratio, this compares the array’s
+          nameplate DC capacity with the inverter’s AC capacity. It balances
+          energy harvest against clipping losses.
+        </p>
+      </div>
+    </div>
+
+    <div class="note accent-note">
+      <span class="note-label">System architectures</span>
+
+      <p>
+        <strong>String inverters</strong> connect modules in series strings
+        that feed a central inverter. They are generally cost-effective but can
+        be more affected by uneven shading.
+      </p>
+
+      <p>
+        <strong>Microinverters</strong> are installed at individual modules,
+        allowing module-level conversion and monitoring. They can perform well
+        on roofs with multiple orientations or partial shading.
+      </p>
+
+      <p>
+        <strong>Power optimizers</strong> operate at module level while feeding
+        a string inverter. They provide module-level optimisation while
+        retaining part of the string-inverter architecture.
+      </p>
+    </div>
+
+    <div class="reading-grid">
+      <div>
+        <h3>Grid connection and safety</h3>
+
+        <p>
+          <strong>Three-phase power</strong> delivers electricity through three
+          conductors with a 120° phase offset. It provides smoother,
+          higher-capacity power delivery and is common in commercial systems
+          and larger residential inverters.
+        </p>
+
+        <p>
+          <strong>Single-phase power</strong> uses one alternating-current phase
+          and is common in smaller residential systems. The choice between
+          single-phase and three-phase equipment depends on grid requirements
+          and load characteristics.
+        </p>
+      </div>
+
+      <div>
+        <h3>Anti-islanding protection</h3>
+
+        <p>
+          <strong>Anti-islanding protection</strong> is an inverter safety
+          function that disconnects the solar system from the grid during an
+          outage. This prevents the system from energizing utility lines while
+          workers are repairing them.
+        </p>
+      </div>
+    </div>
+
+    <div class="reading-grid">
+      <div>
+        <h3>Solar thermal collectors</h3>
+
+        <p>
+          <strong>Flat-plate collectors</strong> use a dark absorber plate
+          beneath a transparent cover to heat water or air. They are widely
+          used for domestic hot water and other low-temperature applications.
+        </p>
+
+        <p>
+          <strong>Evacuated tube collectors</strong> use vacuum-sealed glass
+          tubes to reduce convective heat loss. They are effective in cold or
+          windy climates.
+        </p>
+
+        <p>
+          <strong>Concentrating collectors</strong> use mirrors or lenses to
+          focus sunlight onto a small receiver, producing high temperatures for
+          industrial process heat or utility-scale thermal power.
+        </p>
+      </div>
+
+      <div>
+        <h3>Thermal transport and storage</h3>
+
+        <p>
+          <strong>Working fluid</strong> is the medium that carries thermal
+          energy from the collector to the point of use or storage. Examples
+          include water, glycol, air, and molten salt.
+        </p>
+
+        <p>
+          <strong>TES — Thermal Energy Storage</strong> stores heat or cold in
+          a medium such as water, phase-change material, or molten salt. The
+          stored thermal energy can be used hours after it was collected,
+          improving load flexibility and system resilience.
+        </p>
+      </div>
+    </div>
+
+    <div class="next-step">
+      <span class="note-label">Integrated design insight</span>
+
+      <p>
+        Together, these electrical and thermal design parameters create an
+        integrated, efficient, and safe renewable energy system. The next step
+        is to model how module temperature, shading, string voltage, inverter
+        limits, collector efficiency, working-fluid flow, and thermal storage
+        affect the system’s expected performance.
+      </p>
+    </div>
+  </div>
+</article>
+
+  
+
 
 </section>
 
