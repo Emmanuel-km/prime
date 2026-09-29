@@ -919,6 +919,309 @@
 </article>
 
 
+
+
+
+
+<!-- 29 September 2026 -->
+<article class="entry featured">
+  <div class="entry-date">
+    <time datetime="2026-09-29">29 September 2026</time>
+    <span>Tuesday</span>
+  </div>
+
+  <div class="entry-content">
+    <p class="tag">Highlight of the day</p>
+
+    <blockquote>
+      “Circuit analysis turns a network of components into understandable
+      relationships between voltage, current, power, and frequency.”
+    </blockquote>
+
+    <p class="source">
+      Key discussion:
+      <cite>Fundamental Circuit Laws &amp; Analysis</cite>
+    </p>
+
+    <div class="note">
+      <span class="note-label">What I learned</span>
+
+      <p>
+        Circuit analysis is the process of finding the currents and voltages in
+        a network of connected components. It is mainly guided by Ohm’s Law
+        and Kirchhoff’s Laws.
+      </p>
+    </div>
+
+    <div class="reading-grid">
+      <div>
+        <h3>Ohm’s Law</h3>
+
+        <p>
+          Ohm’s Law describes the relationship between voltage, current, and
+          resistance in an electrical circuit.
+        </p>
+
+        <p class="equation">
+          V = I R
+          <br>
+          R = <span class="fraction"><sup>V</sup><span></span><sub>I</sub></span>
+          &nbsp;&nbsp;
+          I = <span class="fraction"><sup>V</sup><span></span><sub>R</sub></span>
+        </p>
+
+        <p>
+          Here, <strong>V</strong> is voltage measured in volts,
+          <strong>I</strong> is current measured in amperes, and
+          <strong>R</strong> is resistance measured in ohms.
+        </p>
+
+        <figure class="reading-image">
+          <img
+            src="01_ohms_law.png"
+            alt="Diagram illustrating Ohm's Law and the relationship between voltage, current, and resistance."
+            loading="lazy"
+          >
+          <figcaption>
+            Figure 1: Ohm’s Law relationship between voltage, current, and
+            resistance.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div>
+        <h3>Kirchhoff’s Laws</h3>
+
+        <p>
+          <strong>Kirchhoff’s Voltage Law (KVL)</strong> states that the
+          algebraic sum of all voltage rises and voltage drops around any
+          closed loop is zero.
+        </p>
+
+        <p class="equation">
+          &Sigma;V = 0
+        </p>
+
+        <p>
+          <strong>Kirchhoff’s Current Law (KCL)</strong> states that the total
+          current entering a node or junction equals the total current leaving
+          that node.
+        </p>
+
+        <p class="equation">
+          &Sigma;I<sub>in</sub> = &Sigma;I<sub>out</sub>
+        </p>
+
+        <figure class="reading-image">
+          <img
+            src="02_kirchhoffs_laws.png"
+            alt="Circuit diagram illustrating Kirchhoff's Voltage Law and Kirchhoff's Current Law."
+            loading="lazy"
+          >
+          <figcaption>
+            Figure 2: Kirchhoff’s Laws applied to circuit loops and junctions.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="note accent-note">
+      <span class="note-label">Kirchhoff’s work in thermodynamics</span>
+
+      <p>
+        Gustav Kirchhoff also contributed to thermodynamics and radiation
+        physics. Kirchhoff’s law of thermal radiation states that, at thermal
+        equilibrium, the emissivity of a body at a given wavelength and
+        temperature equals its absorptivity at that same wavelength and
+        temperature.
+      </p>
+
+      <p>
+        A perfect blackbody absorbs all incident radiation and has the maximum
+        possible emissive power at a given temperature. Its emitted radiation
+        depends on temperature and wavelength according to the laws of
+        blackbody radiation.
+      </p>
+    </div>
+
+    <div class="reading-grid">
+      <div>
+        <h3>AC and DC</h3>
+
+        <p>
+          <strong>Alternating current (AC)</strong> periodically reverses
+          direction and continuously changes its magnitude over time. AC is
+          commonly used in electrical grids and buildings.
+        </p>
+
+        <p>
+          <strong>Direct current (DC)</strong> flows in one constant direction.
+          Batteries, solar panels, and many electronic circuits produce or use
+          DC electricity.
+        </p>
+
+        <figure class="reading-image">
+          <img
+            src="03_ac_vs_dc.png"
+            alt="Comparison of alternating current and direct current waveforms."
+            loading="lazy"
+          >
+          <figcaption>
+            Figure 3: Comparison between AC and DC current.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div>
+        <h3>RMS voltage</h3>
+
+        <p>
+          Root-mean-square, or <strong>RMS</strong>, voltage is the equivalent
+          DC voltage that produces the same heating or power effect as a
+          time-varying AC signal in a resistive load.
+        </p>
+
+        <p class="equation">
+          V<sub>RMS</sub> =
+          <span class="fraction">
+            <sup>V<sub>peak</sub></sup>
+            <span></span>
+            <sub>&radic;2</sub>
+          </span>
+        </p>
+
+        <figure class="reading-image">
+          <img
+            src="04_rms_voltage.png"
+            alt="AC waveform diagram showing the relationship between peak voltage and RMS voltage."
+            loading="lazy"
+          >
+          <figcaption>
+            Figure 4: RMS voltage compared with the peak AC voltage.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="reading-grid">
+      <div>
+        <h3>Power factor</h3>
+
+        <p>
+          Power factor is the ratio of real power used to perform useful work
+          to the total apparent power flowing in an AC electrical system.
+        </p>
+
+        <p class="equation">
+          Power factor =
+          <span class="fraction">
+            <sup>Real power</sup>
+            <span></span>
+            <sub>Apparent power</sub>
+          </span>
+          = cos(&phi;)
+        </p>
+
+        <p>
+          A power factor close to 1 means that electrical power is being used
+          efficiently. Inductive and capacitive loads can cause the current and
+          voltage to become out of phase.
+        </p>
+
+        <figure class="reading-image">
+          <img
+            src="05_power_factor.png"
+            alt="Power factor diagram showing the phase relationship between voltage, current, real power, and reactive power."
+            loading="lazy"
+          >
+          <figcaption>
+            Figure 5: Power factor and the phase relationship between voltage
+            and current.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div>
+        <h3>Complex impedance</h3>
+
+        <p>
+          Complex impedance, represented by <strong>Z</strong>, is the
+          frequency-dependent opposition that an AC circuit presents to
+          electrical current.
+        </p>
+
+        <p class="equation">
+          Z = R + jX
+        </p>
+
+        <p>
+          <strong>R</strong> represents resistance,
+          <strong>X</strong> represents reactance, and
+          <strong>j</strong> is the imaginary unit. Impedance combines the
+          effects of resistance and reactance into one quantity.
+        </p>
+
+        <figure class="reading-image">
+          <img
+            src="06_complex_impedance.png"
+            alt="Complex impedance diagram showing resistance, reactance, and the impedance vector."
+            loading="lazy"
+          >
+          <figcaption>
+            Figure 6: Complex impedance as the combination of resistance and
+            reactance.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="note">
+      <span class="note-label">Resonant frequency</span>
+
+      <p>
+        Resonant frequency is the frequency at which a system naturally
+        oscillates with the greatest amplitude when external energy is
+        applied. In an AC circuit containing inductance and capacitance,
+        resonance occurs when inductive reactance and capacitive reactance
+        cancel each other.
+      </p>
+
+      <p class="equation">
+        f<sub>0</sub> =
+        <span class="fraction">
+          <sup>1</sup>
+          <span></span>
+          <sub>2&pi;&radic;LC</sub>
+        </span>
+      </p>
+
+      <figure class="reading-image">
+        <img
+          src="07_resonant_frequency.png"
+          alt="Resonant frequency graph showing maximum circuit response at the resonance point."
+          loading="lazy"
+        >
+        <figcaption>
+          Figure 7: Circuit response reaching its maximum at resonant
+          frequency.
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="next-step">
+      <span class="note-label">Next step</span>
+
+      <p>
+        Practise circuit analysis by applying Ohm’s Law, KCL, and KVL to simple
+        resistor networks before moving on to AC circuits involving RMS
+        voltage, power factor, impedance, and resonance.
+      </p>
+    </div>
+  </div>
+</article>
+
+
+
 </section>
 
     
