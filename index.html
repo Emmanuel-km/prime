@@ -1232,6 +1232,220 @@ width=500 px
 </article>
 
 
+  <!-- 30 September 2026 -->
+<article class="entry featured">
+  <div class="entry-date">
+    <time datetime="2026-09-30">30 September 2026</time>
+    <span>Wednesday</span>
+  </div>
+
+  <div class="entry-content">
+    <p class="tag">Highlight of the day</p>
+
+    <blockquote>
+      “Power electronics makes electrical energy useful by converting it into
+      the form required by a load.”
+    </blockquote>
+
+    <p class="source">
+      Key discussion:
+      <cite>Power Electronics &amp; Conversion</cite>
+    </p>
+
+    <div class="note">
+      <span class="note-label">What I learned</span>
+
+      <p>
+        Power electronic devices convert electricity from one form to another.
+        They can change alternating current into direct current, direct current
+        into alternating current, adjust voltage levels, regulate power, and
+        control how energy is delivered to a load.
+      </p>
+    </div>
+
+    <div class="reading-grid">
+      <div>
+        <h3>Diode</h3>
+
+        <p>
+          A diode is a semiconductor device, commonly made from silicon, that
+          allows current to flow primarily in one direction. It therefore acts
+          like a one-way electrical switch.
+        </p>
+
+        <p>
+          Diodes are used for rectification, reverse-polarity protection,
+          freewheeling paths, signal control, and voltage regulation.
+        </p>
+
+        <figure class="reading-image">
+          <img
+            src="diode.png"
+            alt="Diagram of a semiconductor diode showing its symbol and one-way current flow."
+            loading="lazy"
+          >
+          <figcaption>
+            Figure 1: Diode symbol and one-way current conduction.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div>
+        <h3>Rectifier</h3>
+
+        <p>
+          A rectifier is a power-electronic converter that changes AC input
+          power into DC output power. Rectifiers often require filtering and
+          voltage regulation to produce a smoother and more stable DC supply.
+        </p>
+
+        <h3>RF energy-harvesting case</h3>
+
+        <p>
+          In an RF energy harvester, the rectifier converts the received
+          radio-frequency signal into a DC signal after the matching network.
+          This makes the rectifier a central part of the system.
+        </p>
+
+        <p>
+          Because the rectified output voltage can be very low, the rectifier
+          is often connected to a DC–DC converter. The converter increases the
+          voltage so that the following electronic equipment can operate
+          properly.
+        </p>
+      </div>
+    </div>
+
+    <div class="note accent-note">
+      <span class="note-label">Inverter</span>
+
+      <p>
+        An inverter is a power-electronic converter that changes DC power into
+        AC power. Inverters are used in solar PV systems, battery storage,
+        uninterruptible power supplies, motor drives, and many other
+        applications.
+      </p>
+
+      <p>
+        The output voltage, frequency, and waveform can be controlled using
+        switching devices and techniques such as pulse-width modulation.
+      </p>
+    </div>
+
+    <div class="reading-grid">
+      <div>
+        <h3>Pulse-width modulation</h3>
+
+        <p>
+          <strong>Pulse-width modulation (PWM)</strong> represents a signal
+          using rectangular pulses with a controlled duty cycle. The duty cycle
+          is the proportion of each switching period for which the switch
+          remains on.
+        </p>
+
+        <p>
+          PWM controls the average voltage, current, or power delivered to a
+          load by switching the supply rapidly between its minimum and maximum
+          values.
+        </p>
+
+        <p>
+          A longer on-time produces a higher average output, while a shorter
+          on-time produces a lower average output.
+        </p>
+      </div>
+
+      <div>
+        <h3>PWM example</h3>
+
+        <p class="equation">
+          Duty cycle =
+          <span class="fraction">
+            <sup>On time</sup>
+            <span></span>
+            <sub>Total period</sub>
+          </span>
+          &times; 100%
+        </p>
+
+        <p>
+          PWM is widely used in inverters, DC–DC converters, motor drives,
+          LED dimming, battery chargers, and power supplies.
+        </p>
+
+        <p>
+          In an inverter, PWM can be used to approximate a sinusoidal AC
+          waveform from a DC source.
+        </p>
+      </div>
+    </div>
+
+    <div class="note">
+      <span class="note-label">MOSFET</span>
+
+      <p>
+        A metal–oxide–semiconductor field-effect transistor, or
+        <strong>MOSFET</strong>, is a voltage-controlled semiconductor device.
+        It has an insulated gate, and the voltage applied to the gate controls
+        the conductivity between the other terminals.
+      </p>
+
+      <p>
+        MOSFETs can be used to amplify signals or switch electrical power.
+        Their insulated gate requires very little steady-state input current,
+        making them useful in high-speed switching applications.
+      </p>
+    </div>
+
+    <div class="reading-grid">
+      <div>
+        <h3>Power MOSFET as a switch</h3>
+
+        <p>
+          A power MOSFET is commonly used as an electronic switch for DC loads.
+          Applying a suitable gate-to-source voltage turns the device on,
+          allowing current to flow through the load.
+        </p>
+
+        <p>
+          Removing or reducing the gate voltage turns the device off and
+          interrupts the current path.
+        </p>
+      </div>
+
+      <div>
+        <h3>N-channel and P-channel</h3>
+
+        <p>
+          Both N-channel and P-channel power MOSFETs are used in switching
+          circuits, although N-channel devices are more common in many
+          power-conversion applications because of their favourable conduction
+          characteristics.
+        </p>
+
+        <p>
+          MOSFET selection depends on voltage rating, current rating,
+          on-resistance, switching speed, gate-drive requirements, and thermal
+          performance.
+        </p>
+      </div>
+    </div>
+
+    <div class="next-step">
+      <span class="note-label">Next step</span>
+
+      <p>
+        Study how diodes, MOSFETs, and PWM work together in a simple
+        DC–DC converter, then compare its input voltage, output voltage,
+        switching frequency, duty cycle, efficiency, and heat losses.
+      </p>
+    </div>
+  </div>
+</article>
+
+  
+
+  
 
 </section>
 
