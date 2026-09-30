@@ -1,3 +1,4 @@
+
 # Now Known
 
 A simple static daily reading journal for GitHub Pages.
@@ -12,3 +13,7 @@ A simple static daily reading journal for GitHub Pages.
 
 ## site
 https://emmanuel-km.github.io/prime/
+
+on vercel 
+
+https://prime-three-rho.vercel.app/
